@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+}
+
+.body:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.body > a > img {
+    float: left;
+    margin: 0px 20% 20px;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.content {
+    width: 80%;
+    margin: 20px 10%;
+}
+
+.content .im {
+    float: left;
+    width: 20%;
+    margin: 0 6.667% 4%;
+}
+
+.content .im img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.content .im .title {
+    text-align: center;
+}
+
+.im a {
+    color: black;
+}
+
+.im a:hover {
+    color: #cac3b7;
+}

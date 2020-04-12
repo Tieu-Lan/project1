@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse</title>
+    <link rel="stylesheet" href="css/browse.css" type="text/css">
+    <link href="css/header_footer.css" rel="stylesheet" type="text/css">
+    <script src="js/browse.js"></script>
+</head>
+<body>
+<header>
+    <ul class="nav">
+        <li class="select"><img src="../images/tea.png"></li>
+        <li class="select"><a href="home.html">Home</a></li>
+        <li class="select"><a href="browse.html" id="now">Browse</a></li>
+        <li class="select"><a href="search.html">Search</a></li>
+        <li class="account">
+            <a href="#">My Account ▾</a>
+            <ul class="two">
+                <li><a href="upload.html">Upload</a></li>
+                <li><a href="my_photos.html">My Photos</a></li>
+                <li><a href="favor.html">My Collection</a></li>
+                <li><a href="../index.html">Sign In</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<div class="body">
+    <form class="hot-box" action="#" method="get">
+        <div class="hot">
+            <p class="head">Search by Title</p>
+            <div class="bottom">
+                <span><input type="text"></span>
+                <span><a href="#"><img src="../images/search.png"></a></span>
+            </div>
+        </div>
+        <div class="hot">
+            <ul>
+                <li class="head"><a href="#">Hot City</a></li>
+                <li class="em"><a href="#">Shanghai</a></li>
+                <li class="em"><a href="#">Beijing</a></li>
+                <li class="em"><a href="#">Guangzhou</a></li>
+                <li class="bottom"><a href="#">New York</a></li>
+            </ul>
+        </div>
+        <div class="hot">
+            <ul>
+                <li class="head"><a href="#">Hot Country</a></li>
+                <li class="em"><a href="#">China</a></li>
+                <li class="em"><a href="#">America</a></li>
+                <li class="em"><a href="#">Canada</a></li>
+                <li class="bottom"><a href="#">Japan</a></li>
+            </ul>
+        </div>
+        <div class="hot">
+            <ul>
+                <li class="head"><a href="#">Hot Content</a></li>
+                <li class="em"><a href="#">Animal</a></li>
+                <li class="em"><a href="#">Building</a></li>
+                <li class="bottom"><a href="#">River</a></li>
+            </ul>
+        </div>
+    </form>
+    <div class="filter-box">
+        <div class="filter-box-head"><p>Filter</p></div>
+        <div class="filter-box-select">
+            <span>
+                <select>
+                    <option>Filter by Content</option>
+                </select>
+            </span>
+            <span>
+                <select id="s1" onchange="move()">
+                    <option value="none">Filter by Country</option>
+                    <option value="China"> China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Italy">Italy</option>
+                    <option value="America">America</option>
+                </select>
+            </span>
+            <span>
+                <select id="s2">
+                    <option>Filter by City</option>
+                </select>
+                </span>
+            <span>
+                <input type="submit" value="Filter" onclick="alert('过滤成功')">
+            </span>
+            <ul>
+                <li class="img" id="s"><a href="details.html"><img src="../images/travel-images/normal/medium/222223.jpg"></a>
+                </li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5855213165.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5855221959.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5855729828.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5855735700.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5855752464.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5855774224.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5856658791.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5856697109.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5857298322.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/5857398054.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/6114850721.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/6114859969.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/6114867983.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/6114881215.jpg"></a></li>
+                <li><a href="details.html"><img src="../images/travel-images/normal/medium/6114904363.jpg"></a></li>
+            </ul>
+            <div class="filter-box-select-page">
+                <p>
+                    <a href="#"><</a>
+                    <a href="#" id="page-choose">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    ...
+                    <a href="#">10</a>
+                    <a href="# ">></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="side">
+    <ul>
+        <li><a href="#"><img src="../images/up.png"></a></li>
+        <li><a href="#" onclick="alert()"><img src="../images/shuaxin.png"></a></li>
+    </ul>
+</div>
+<footer>
+    <ul class="foot1">
+        <li><a href="#">使用条款</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">隐私保护</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">Cookie</a></li>
+        <li><a href="#">投诉</a></li>
+    </ul>
+    <ul class="foot2">
+        <li><a href="#"><img src="../images/WeChat.png"></a></li>
+        <li><a href="#"><img src="../images/QQ.png"></a></li>
+        <li><a href="#"><img src="../images/xinlang.png"></a></li>
+        <li><a href="#"><img src="../images/location.png"></a></li>
+    </ul>
+    <small>Copyright Ⓒ 2019- 2021 Web 19SS. All Rights Reserved. 备案号: 19302010053</small>
+</footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" type="text/css" href="css/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="css/search-box.css">
+    <link rel="stylesheet" type="text/css" href="css/information-box.css">
+    <link rel="stylesheet" type="text/css" href="src/css/upload.css">
+</head>
+<body>
+<header>
+    <ul class="nav">
+        <li class="select"><img src="../images/tea.png"></li>
+        <li class="select"><a href="home.html">Home</a></li>
+        <li class="select"><a href="browse.html">Browse</a></li>
+        <li class="select"><a href="search.html">Search</a></li>
+        <li class="account">
+            <a href="#">My Account ▾</a>
+            <ul class="two">
+                <li><a href="upload.html">Upload</a></li>
+                <li><a href="my_photos.html">My Photos</a></li>
+                <li><a href="favor.html">My Collection</a></li>
+                <li><a href="../index.html">Sign In</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<div class="body">
+    <p class="head">Upload</p>
+    <form method="post" action="my_photos.html" id="image-review-box">
+        <div id="test-image-preview"></div>
+        <div id="upload">
+            <input type="file" id="test-image-file" name="test">
+            <div id="show-box">选择图片</div>
+        </div>
+        <p id="test-file-info"></p>
+    </form>
+    <form method="get" action="my_photos.html" id="upload-box">
+        <p class="border-margin">图片标题：</p>
+        <input type="text" class="border-margin">
+        <p class="border-margin">图片描述：</p>
+        <textarea class="border-margin"></textarea>
+        <p class="border-margin">拍摄国家：</p>
+        <input type="text" class="border-margin">
+        <p class="border-margin">拍摄城市</p>
+        <input type="text" class="border-margin">
+        <br>
+        <input type="submit" onclick="alert('上传成功')">
+    </form>
+</div>
+<div class="side">
+    <ul>
+        <li><a href="#"><img src="../images/up.png"></a></li>
+        <li><a href="#" onclick="alert()"><img src="../images/shuaxin.png"></a></li>
+    </ul>
+</div>
+<footer>
+    <ul class="foot1">
+        <li><a href="#">使用条款</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">隐私保护</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">Cookie</a></li>
+        <li><a href="#">投诉</a></li>
+    </ul>
+    <ul class="foot2">
+        <li><a href="#"><img src="../images/WeChat.png"></a></li>
+        <li><a href="#"><img src="../images/QQ.png"></a></li>
+        <li><a href="#"><img src="../images/xinlang.png"></a></li>
+        <li><a href="#"><img src="../images/location.png"></a></li>
+    </ul>
+    <small>Copyright Ⓒ 2019- 2021 Web 19SS. All Rights Reserved. 备案号: 19302010053</small>
+</footer>
+</body>
+<script src="js/upload.js"></script>
+</html>
